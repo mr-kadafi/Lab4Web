@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html" class="active">About</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+
+        <section id="hero">
+            <h1>About Me</h1>
+            <p>
+                Selamat datang di halaman profil saya. Halaman ini berisi
+                deskripsi diri, keahlian, dan beberapa contoh portofolio
+                sebagai bagian dari pembelajaran pengembangan web.
+            </p>
+        </section>
+
+        <section id="wrapper">
+
+            <section id="main" class="about-main">
+
+                <!-- Deskripsi diri -->
+                <article class="about-section">
+                    <h2>Deskripsi Diri</h2>
+                    <img src="https://dummyimage.com/180x180/428bca/ffffff.png&text=Profile" alt="Foto profil"
+                        class="profile-image">
+
+                    <p>
+                        Halo! Saya adalah mahasiswa yang sedang mempelajari
+                        pengembangan web, khususnya HTML dan CSS. Saya tertarik
+                        mempelajari cara membuat website yang terstruktur,
+                        menarik, dan mudah digunakan.
+                    </p>
+
+                    <p>
+                        Melalui praktikum ini, saya mempelajari pembuatan
+                        layout website, pengaturan posisi elemen, navigasi,
+                        serta penyusunan konten menggunakan HTML dan CSS.
+                    </p>
+                </article>
+
+                <hr class="divider">
+
+                <!-- Keahlian -->
+                <article class="about-section">
+                    <h2>Keahlian</h2>
+
+                    <ul class="skill-list">
+                        <li>HTML untuk menyusun struktur halaman web.</li>
+                        <li>CSS untuk mengatur tampilan dan layout website.</li>
+                        <li>Visual Studio Code sebagai editor kode.</li>
+                        <li>GitHub untuk menyimpan dan mendokumentasikan proyek.</li>
+                    </ul>
+                </article>
+
+                <hr class="divider">
+
+                <!-- Portofolio -->
+                <article class="about-section">
+                    <h2>Portofolio</h2>
+
+                    <div class="portfolio-item">
+                        <img src="https://dummyimage.com/640x300/428bca/ffffff.png&text=Project+1"
+                            alt="Proyek website HTML dasar">
+
+                        <h3>Website HTML Dasar</h3>
+                        <p>
+                            Membuat halaman web sederhana menggunakan HTML
+                            dengan elemen heading, paragraf, gambar, dan tautan.
+                        </p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="https://dummyimage.com/640x300/71a68a/ffffff.png&text=Project+2"
+                            alt="Proyek layout CSS">
+
+                        <h3>Layout Website dengan CSS</h3>
+                        <p>
+                            Membuat layout website menggunakan CSS untuk
+                            mengatur navigasi, konten utama, sidebar, dan footer.
+                        </p>
+                    </div>
+                </article>
+
+                <hr class="divider">
+
+                <!-- Informasi tambahan -->
+                <article class="about-section">
+                    <h2>Informasi Tambahan</h2>
+                    <p>
+                        Saya terus berusaha mengembangkan kemampuan dalam
+                        pemrograman web melalui latihan, praktikum, dan
+                        pembuatan proyek sederhana.
+                    </p>
+
+                    <a href="kontak.html" class="btn btn-large">
+                        Hubungi Saya &raquo;
+                    </a>
+                </article>
+
+            </section>
+
+            <aside id="sidebar">
+                <div class="widget-box">
+                    <h3 class="title">Navigasi</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="artikel.html">Artikel</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget-box">
+                    <h3 class="title">Tentang Halaman</h3>
+                    <p>
+                        Halaman ini menampilkan deskripsi diri, keahlian,
+                        portofolio, dan informasi tambahan dalam satu layout.
+                    </p>
+                </div>
+            </aside>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

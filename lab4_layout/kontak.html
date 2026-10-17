@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html">About</a>
+            <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+
+        <section id="hero">
+            <h1>Contact Us</h1>
+            <p>
+                Silakan isi formulir berikut jika ingin mengirimkan
+                pertanyaan, saran, atau pesan kepada kami.
+            </p>
+        </section>
+
+        <section id="wrapper">
+
+            <section id="main" class="contact-main">
+
+                <div class="contact-heading">
+                    <h2>Kirim Pesan</h2>
+                    <p>
+                        Lengkapi informasi berikut dengan benar.
+                        Kolom bertanda bintang (*) wajib diisi.
+                    </p>
+                </div>
+
+                <form action="#" method="post" class="contact-form">
+
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap *</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email *</label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon</label>
+                        <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjek">Subjek Pesan *</label>
+                        <select id="subjek" name="subjek" required>
+                            <option value="">-- Pilih subjek --</option>
+                            <option value="pertanyaan">Pertanyaan</option>
+                            <option value="saran">Saran</option>
+                            <option value="kerja-sama">Kerja Sama</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan *</label>
+                        <textarea id="pesan" name="pesan" rows="6" placeholder="Tuliskan pesan kamu di sini..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="persetujuan" name="persetujuan" required>
+                        <label for="persetujuan">
+                            Saya memastikan informasi yang diberikan sudah benar.
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-large">
+                            Kirim Pesan
+                        </button>
+
+                        <button type="reset" class="btn btn-reset">
+                            Reset
+                        </button>
+                    </div>
+
+                </form>
+
+            </section>
+
+            <aside id="sidebar">
+                <div class="widget-box">
+                    <h3 class="title">Informasi Kontak</h3>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Formulir Kontak</a></li>
+                        <li><a href="home.html">Halaman Utama</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget-box">
+                    <h3 class="title">Keterangan</h3>
+                    <p>
+                        Gunakan formulir ini untuk menyampaikan pertanyaan,
+                        saran, atau informasi lainnya. Pastikan alamat email
+                        yang dimasukkan sudah benar.
+                    </p>
+                </div>
+            </aside>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
